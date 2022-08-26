@@ -55,6 +55,7 @@ public class Fly {
 	}
 	
 	public static void main(String[] args) {
+		//Test methods below...this main method will be deleted later on
 		Fly game = new Fly();
 		System.out.println(game.toString());
 		game.setMass(19.0);
