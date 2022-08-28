@@ -30,11 +30,8 @@ public class Fly {
 	public double getSpeed() {
 		return this.speed;
 	}
-	private boolean isDead() {
-		if(this.massGrams == 0)
-			return true;
-		else
-			return false;
+	public boolean isDead() {
+		return this.massGrams == 0;
 	}
 	public String toString() {
 		if(this.isDead()) {
@@ -52,17 +49,5 @@ public class Fly {
 			else
 				this.speed+=-0.5;
 		}
-	}
-	
-	public static void main(String[] args) {
-		//Test methods below...this main method will be deleted later on
-		Fly game = new Fly();
-		System.out.println(game.toString());
-		game.setMass(19.0);
-		System.out.println(game.getMass());
-		game.setSpeed(11.0);
-		System.out.println(game.getSpeed());
-		game.grow(5);
-		System.out.println(game.toString());
 	}
 }
